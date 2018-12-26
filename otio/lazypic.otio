@@ -1,0 +1,142 @@
+{
+    "OTIO_SCHEMA": "Timeline.1", 
+    "metadata": {}, 
+    "name": "Timeline 1", 
+    "tracks": {
+        "OTIO_SCHEMA": "Stack.1", 
+        "children": [
+            {
+                "OTIO_SCHEMA": "Track.1", 
+                "children": [
+                    {
+                        "OTIO_SCHEMA": "Clip.1", 
+                        "effects": [], 
+                        "markers": [], 
+                        "media_reference": {
+                            "OTIO_SCHEMA": "MissingReference.1", 
+                            "available_range": null, 
+                            "metadata": {}, 
+                            "name": null
+                        }, 
+                        "metadata": {}, 
+                        "name": "lazypica_1_2000-08-06_2347_C0001.mov", 
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1", 
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 187
+                            }, 
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 2056272
+                            }
+                        }
+                    }, 
+                    {
+                        "OTIO_SCHEMA": "Clip.1", 
+                        "effects": [], 
+                        "markers": [], 
+                        "media_reference": {
+                            "OTIO_SCHEMA": "MissingReference.1", 
+                            "available_range": null, 
+                            "metadata": {}, 
+                            "name": null
+                        }, 
+                        "metadata": {}, 
+                        "name": "plate_v001.mov", 
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1", 
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 187
+                            }, 
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 2056272
+                            }
+                        }
+                    }, 
+                    {
+                        "OTIO_SCHEMA": "Clip.1", 
+                        "effects": [], 
+                        "markers": [], 
+                        "media_reference": {
+                            "OTIO_SCHEMA": "MissingReference.1", 
+                            "available_range": null, 
+                            "metadata": {}, 
+                            "name": null
+                        }, 
+                        "metadata": {}, 
+                        "name": "lazypica_1_2000-01-01_0906_C0003.mov", 
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1", 
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 93
+                            }, 
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 786312
+                            }
+                        }
+                    }, 
+                    {
+                        "OTIO_SCHEMA": "Clip.1", 
+                        "effects": [], 
+                        "markers": [], 
+                        "media_reference": {
+                            "OTIO_SCHEMA": "MissingReference.1", 
+                            "available_range": null, 
+                            "metadata": {}, 
+                            "name": null
+                        }, 
+                        "metadata": {}, 
+                        "name": "lazypica_1_2000-01-01_0901_C0002_[000000-000052].dng", 
+                        "source_range": {
+                            "OTIO_SCHEMA": "TimeRange.1", 
+                            "duration": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 53
+                            }, 
+                            "start_time": {
+                                "OTIO_SCHEMA": "RationalTime.1", 
+                                "rate": 24.0, 
+                                "value": 779088
+                            }
+                        }
+                    }
+                ], 
+                "effects": [], 
+                "kind": "Video", 
+                "markers": [], 
+                "metadata": {}, 
+                "name": "V", 
+                "source_range": {
+                    "OTIO_SCHEMA": "TimeRange.1", 
+                    "duration": {
+                        "OTIO_SCHEMA": "RationalTime.1", 
+                        "rate": 24.0, 
+                        "value": 520
+                    }, 
+                    "start_time": {
+                        "OTIO_SCHEMA": "RationalTime.1", 
+                        "rate": 24.0, 
+                        "value": -86400
+                    }
+                }
+            }
+        ], 
+        "effects": [], 
+        "markers": [], 
+        "metadata": {}, 
+        "name": "tracks", 
+        "source_range": null
+    }
+}
