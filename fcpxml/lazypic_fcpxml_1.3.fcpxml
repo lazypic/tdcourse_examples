@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.3">
+    <project name="Timeline 1 (Resolve)">
+        <resources>
+            <format id="r0" width="1920" frameDuration="1/24s" height="1080" name="FFVideoFormat1080p24"/>
+            <asset start="85678/1s" id="r1" hasVideo="1" audioSources="1" hasAudio="1" duration="187/24s" audioChannels="2" name="plate_v001.mov" src="file:///Volumes/Macintosh%20HD/Users/woong/onsetdata/plate_v001.mov" format="r0"/>
+            <asset start="66254/1s" id="r2" hasVideo="1" audioSources="1" hasAudio="1" duration="47/8s" audioChannels="2" name="lazypica_1_2000-01-01_1824_C0004.mov" src="file:///Volumes/Macintosh%20HD/Users/woong/onsetdata/circle/181223/bmpcc/lazypica_1_2000-01-01_1824_C0004.mov" format="r0"/>
+            <asset start="66434/1s" id="r3" hasVideo="1" audioSources="1" hasAudio="1" duration="65/8s" audioChannels="2" name="lazypica_1_2000-01-01_1827_C0005.mov" src="file:///Volumes/Macintosh%20HD/Users/woong/onsetdata/circle/181223/bmpcc/lazypica_1_2000-01-01_1827_C0005.mov" format="r0"/>
+            <asset start="71755/1s" id="r4" hasVideo="1" audioSources="1" hasAudio="1" duration="37/6s" audioChannels="2" name="lazypica_1_2000-01-01_1955_C0010.mov" src="file:///Volumes/Macintosh%20HD/Users/woong/onsetdata/circle/181223/bmpcc/lazypica_1_2000-01-01_1955_C0010.mov" format="r0"/>
+            <asset start="66565/1s" id="r5" hasVideo="1" audioSources="1" hasAudio="1" duration="23/4s" audioChannels="2" name="lazypica_1_2000-01-01_1829_C0006.mov" src="file:///Volumes/Macintosh%20HD/Users/woong/onsetdata/circle/181223/bmpcc/lazypica_1_2000-01-01_1829_C0006.mov" format="r0"/>
+            <asset start="66765/1s" id="r6" hasVideo="1" audioSources="1" hasAudio="1" duration="217/24s" audioChannels="2" name="lazypica_1_2000-01-01_1832_C0007.mov" src="file:///Volumes/Macintosh%20HD/Users/woong/onsetdata/circle/181223/bmpcc/lazypica_1_2000-01-01_1832_C0007.mov" format="r0"/>
+        </resources>
+        <sequence tcFormat="NDF" duration="25/2s" tcStart="3600/1s" format="r0">
+            <spine>
+                <clip start="1028155/12s" enabled="1" tcFormat="NDF" duration="19/12s" name="plate_v001.mov" offset="3600/1s" format="r0">
+                    <adjust-transform scale="1 1" anchor="0 0" position="0 0"/>
+                    <video start="85678/1s" duration="187/24s" ref="r1" offset="85678/1s">
+                        <audio start="85678/1s" duration="187/24s" lane="-1" srcCh="1, 2" ref="r1" offset="85678/1s"/>
+                    </video>
+                </clip>
+                <clip start="795079/12s" enabled="1" tcFormat="NDF" duration="41/24s" name="lazypica_1_2000-01-01_1824_C0004.mov" offset="43219/12s" format="r0">
+                    <adjust-transform scale="1 1" anchor="0 0" position="0 0"/>
+                    <video start="66254/1s" duration="47/8s" ref="r2" offset="66254/1s">
+                        <audio start="66254/1s" duration="47/8s" lane="-1" srcCh="1, 2" ref="r2" offset="66254/1s"/>
+                    </video>
+                </clip>
+                <clip start="1594471/24s" enabled="1" tcFormat="NDF" duration="19/8s" name="lazypica_1_2000-01-01_1827_C0005.mov" offset="86479/24s" format="r0">
+                    <adjust-transform scale="1 1" anchor="0 0" position="0 0"/>
+                    <video start="66434/1s" duration="65/8s" ref="r3" offset="66434/1s">
+                        <audio start="66434/1s" duration="65/8s" lane="-1" srcCh="1, 2" ref="r3" offset="66434/1s"/>
+                    </video>
+                </clip>
+                <clip start="861085/12s" enabled="1" tcFormat="NDF" duration="2/1s" name="lazypica_1_2000-01-01_1955_C0010.mov" offset="10817/3s" format="r0">
+                    <adjust-transform scale="1 1" anchor="0 0" position="0 0"/>
+                    <video start="71755/1s" duration="37/6s" ref="r4" offset="71755/1s">
+                        <audio start="71755/1s" duration="37/6s" lane="-1" srcCh="1, 2" ref="r4" offset="71755/1s"/>
+                    </video>
+                </clip>
+                <clip start="1597591/24s" enabled="1" tcFormat="NDF" duration="59/24s" name="lazypica_1_2000-01-01_1829_C0006.mov" offset="10823/3s" format="r0">
+                    <adjust-transform scale="1 1" anchor="0 0" position="0 0"/>
+                    <video start="66565/1s" duration="23/4s" ref="r5" offset="66565/1s">
+                        <audio start="66565/1s" duration="23/4s" lane="-1" srcCh="1, 2" ref="r5" offset="66565/1s"/>
+                    </video>
+                </clip>
+                <clip start="801221/12s" enabled="1" tcFormat="NDF" duration="19/8s" name="lazypica_1_2000-01-01_1832_C0007.mov" offset="28881/8s" format="r0">
+                    <adjust-transform scale="1 1" anchor="0 0" position="0 0"/>
+                    <video start="66765/1s" duration="217/24s" ref="r6" offset="66765/1s">
+                        <audio start="66765/1s" duration="217/24s" lane="-1" srcCh="1, 2" ref="r6" offset="66765/1s"/>
+                    </video>
+                </clip>
+            </spine>
+        </sequence>
+    </project>
+</fcpxml>
