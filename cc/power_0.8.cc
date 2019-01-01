@@ -1,0 +1,1 @@
+<ColorCorrection id=""><SOPNode><Description></Description><Slope>1 1 1</Slope><Offset>0 0 0</Offset><Power>0.8 0.8 0.8</Power></SOPNode><SatNode><Saturation>1</Saturation></SatNode></ColorCorrection>
