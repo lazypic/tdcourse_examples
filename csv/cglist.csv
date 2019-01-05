@@ -1,0 +1,4 @@
+ep,seq,scene,shot,note
+1,car,FOO,10,add cg car
+1,car,FOO,20,add dust
+1,car,BAR,10,"add cg car, add dust"
