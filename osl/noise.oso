@@ -1,0 +1,38 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.7.5
+# options: -o /var/folders/vg/xvvbmwg53gv9vtht546vl78r0000gn/T/tmp0ozzhy37.oso -I/private/var/folders/vg/xvvbmwg53gv9vtht546vl78r0000gn/T/AppTranslocation/38C997A5-9AA9-4B1F-9490-8D48A8AD75EC/d/blender.app/Contents/Resources/2.79/scripts/addons/cycles/shader
+shader noise
+param	float	Time	1		%read{2,5} %write{2147483647,-1}
+param	point	Point	0 0 0		%read{1,5} %write{0,0} %initexpr
+oparam	float	Cell	0		%read{2147483647,-1} %write{1,1}
+oparam	color	Perlin	0.80000001 0.80000001 0.80000001		%read{2147483647,-1} %write{2,2}
+oparam	color	UPerlin	0.80000001 0.80000001 0.80000001		%read{2147483647,-1} %write{3,3}
+oparam	color	Simplex	0.80000001 0.80000001 0.80000001		%read{2147483647,-1} %write{4,4}
+oparam	color	USimplex	0.80000001 0.80000001 0.80000001		%read{2147483647,-1} %write{5,5}
+global	point	P	%read{0,0} %write{2147483647,-1}
+const	string	$const1	"cell"		%read{1,1} %write{2147483647,-1}
+const	string	$const2	"perlin"		%read{2,2} %write{2147483647,-1}
+const	string	$const3	"uperlin"		%read{3,3} %write{2147483647,-1}
+const	string	$const4	"simplex"		%read{4,4} %write{2147483647,-1}
+const	string	$const5	"usimplex"		%read{5,5} %write{2147483647,-1}
+code Point
+# Users/woong/examples/osl/noise.osl:5
+# 	output float Cell = 0.0,
+	assign		Point P 	%filename{"Users/woong/examples/osl/noise.osl"} %line{5} %argrw{"wr"}
+code ___main___
+# Users/woong/examples/osl/noise.osl:13
+# 
+	noise		Cell $const1 Point 	%filename{"Users/woong/examples/osl/noise.osl"} %line{13} %argrw{"wrr"}
+# Users/woong/examples/osl/noise.osl:16
+# 
+	noise		Perlin $const2 Point Time 	%line{16} %argrw{"wrrr"}
+# Users/woong/examples/osl/noise.osl:19
+# 	
+	noise		UPerlin $const3 Point Time 	%line{19} %argrw{"wrrr"}
+# Users/woong/examples/osl/noise.osl:22
+# 	
+	noise		Simplex $const4 Point Time 	%line{22} %argrw{"wrrr"}
+# Users/woong/examples/osl/noise.osl:25
+# 	
+	noise		USimplex $const5 Point Time 	%line{25} %argrw{"wrrr"}
+	end
