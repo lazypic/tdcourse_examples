@@ -8,6 +8,10 @@ def genThumb(src):
 	"""
 	경로를 입력받으면 썸네일을 만든다.
 	"""
+	if not os.path.exists(src):
+		return "", "파일이 존재하지 않습니다."
+	if not os.path.isfile(src):
+		return "", "파일형태가 아닙니다."
 	if not os.path.exists("/usr/bin/convert"):
 		return "", "ImageMagick이 설치되지 않았습니다."
 
@@ -25,8 +29,8 @@ def genThumb(src):
 
 if __name__ == "__main__":
 	src = "/project/circle/in/aces_exr/A003C025_150830_R0D0/A003C025_150830_R0D0.078727.exr"
-	stdOut, stdErr = genThumb(src)
-	if stdErr:
-		sys.stderr.write(stdErr)
-	sys.stdout.write(stdOut)
+	stdout, stderr = genThumb(src)
+	if stderr:
+		sys.stderr.write(stderr)
+	sys.stdout.write(stdout)
 
