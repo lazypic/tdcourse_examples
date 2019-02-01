@@ -64,3 +64,15 @@ def digitnum(path):
 	if len(p) != 1:
 		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
 	return len(p[0]), None
+
+def path2ffmpeg(path):
+	"""
+	경로를 받아서 시퀀스라면 ffmpeg 경로로 바꾸어준다.
+	"""
+	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
+	if len(p) != 1:
+		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
+	dgt = len(p[0])
+	head = path.split(p[0])[0]
+	tail = path.split(p[0])[1]
+	return "%s%%%dd%s" % (head,dgt,tail), None

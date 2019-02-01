@@ -54,13 +54,16 @@ def genMov(rootPath, ext):
 		files.sort()
 		start = "/".join([root] + dirs + [files[0]])
 		end =  "/".join([root] + dirs + [files[-1]])
+		seqfile, err = pathapi.path2ffmpeg(start)
+		if err:
+			sys.stderr.write(err)
 		startframe, err = pathapi.seqnum(start)
 		if err:
-			print err
+			sys.stderr.write(err)
 		endframe, err = pathapi.seqnum(end)
 		if err:
-			print err
-		print start, startframe, endframe
+			sys.stderr.write(err)
+		print seqfile, startframe, endframe
 
 if __name__ == "__main__":
 	root = "/project/circle/in/aces_exr"
