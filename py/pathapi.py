@@ -65,7 +65,7 @@ def digitnum(path):
 		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
 	return len(p[0]), None
 
-def path2ffmpeg(path):
+def toFFmpeg(path):
 	"""
 	경로를 받아서 시퀀스라면 ffmpeg 경로로 바꾸어준다.
 	"""
