@@ -71,8 +71,7 @@ def path2ffmpeg(path):
 	"""
 	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
 	if len(p) != 1:
-		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
-	dgt = len(p[0])
-	head = path.split(p[0])[0]
-	tail = path.split(p[0])[1]
-	return "%s%%%dd%s" % (head,dgt,tail), None
+		return path, "경로가 시퀀스 구조가 아닙니다."
+	digitNum = len(p[0])
+	head, tail = path.split(p[0])
+	return "%s%%%dd%s" % (head,digitNum,tail), None
