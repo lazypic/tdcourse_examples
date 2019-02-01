@@ -21,7 +21,8 @@ def searchExt(rootPath, ext):
 			basename, e = os.path.splitext(f)
 			if e != ext:
 				continue
-			results.append("/".join([root]+dirs+[f]))
+			#results.append("/".join([root]+dirs+[f]))
+			results.append("/".join([root, "/".join(dirs), f]))
 	return results
 
 def genProxy(proxy, files):

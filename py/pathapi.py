@@ -51,7 +51,7 @@ def seqnum(path):
 	"""
 	경로에서 시퀀스 넘버를 반환한다.
 	"""
-	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
+	p = re.findall('(\d+)\.\w+$', path.replace("\\","/"))
 	if len(p) != 1:
 		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
 	return int(p[0]), None
@@ -60,7 +60,7 @@ def digitnum(path):
 	"""
 	경로에서 시퀀스 넘버 자릿수를  반환한다.
 	"""
-	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
+	p = re.findall('(\d+)\.\w+$', path.replace("\\","/"))
 	if len(p) != 1:
 		return -1, "경로에서 seqnum 정보를 가지고 올 수 없습니다."
 	return len(p[0]), None
@@ -69,7 +69,7 @@ def toFFmpeg(path):
 	"""
 	경로를 받아서 시퀀스라면 ffmpeg 경로로 바꾸어준다.
 	"""
-	p = re.findall('\.(\d+)\.', path.replace("\\","/"))
+	p = re.findall('(\d+)\.\w+$', path.replace("\\","/"))
 	if len(p) != 1:
 		return path, "경로가 시퀀스 구조가 아닙니다."
 	digitNum = len(p[0])
