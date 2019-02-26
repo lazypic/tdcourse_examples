@@ -1,6 +1,6 @@
 OpenShadingLanguage 1.00
-# Compiled by oslc 1.7.5
-# options: -o /var/folders/vg/xvvbmwg53gv9vtht546vl78r0000gn/T/tmp0ozzhy37.oso -I/private/var/folders/vg/xvvbmwg53gv9vtht546vl78r0000gn/T/AppTranslocation/38C997A5-9AA9-4B1F-9490-8D48A8AD75EC/d/blender.app/Contents/Resources/2.79/scripts/addons/cycles/shader
+# Compiled by oslc 1.9.9
+# options: 
 shader noise
 param	float	Time	1		%read{2,5} %write{2147483647,-1}
 param	point	Point	0 0 0		%read{1,5} %write{0,0} %initexpr
@@ -16,23 +16,23 @@ const	string	$const3	"uperlin"		%read{3,3} %write{2147483647,-1}
 const	string	$const4	"simplex"		%read{4,4} %write{2147483647,-1}
 const	string	$const5	"usimplex"		%read{5,5} %write{2147483647,-1}
 code Point
-# Users/woong/examples/osl/noise.osl:5
-# 	output float Cell = 0.0,
-	assign		Point P 	%filename{"Users/woong/examples/osl/noise.osl"} %line{5} %argrw{"wr"}
+# noise.osl:4
+# 	point Point = P,
+	assign		Point P 	%filename{"noise.osl"} %line{4} %argrw{"wr"}
 code ___main___
-# Users/woong/examples/osl/noise.osl:13
-# 
-	noise		Cell $const1 Point 	%filename{"Users/woong/examples/osl/noise.osl"} %line{13} %argrw{"wrr"}
-# Users/woong/examples/osl/noise.osl:16
-# 
-	noise		Perlin $const2 Point Time 	%line{16} %argrw{"wrrr"}
-# Users/woong/examples/osl/noise.osl:19
-# 	
-	noise		UPerlin $const3 Point Time 	%line{19} %argrw{"wrrr"}
-# Users/woong/examples/osl/noise.osl:22
-# 	
-	noise		Simplex $const4 Point Time 	%line{22} %argrw{"wrrr"}
-# Users/woong/examples/osl/noise.osl:25
-# 	
-	noise		USimplex $const5 Point Time 	%line{25} %argrw{"wrrr"}
+# noise.osl:12
+# 	Cell = noise("cell", Point);
+	noise		Cell $const1 Point 	%filename{"noise.osl"} %line{12} %argrw{"wrr"}
+# noise.osl:15
+# 	Perlin = noise("perlin", Point, Time);
+	noise		Perlin $const2 Point Time 	%line{15} %argrw{"wrrr"}
+# noise.osl:18
+# 	UPerlin = noise("uperlin", Point, Time);
+	noise		UPerlin $const3 Point Time 	%line{18} %argrw{"wrrr"}
+# noise.osl:21
+# 	Simplex = noise("simplex", Point, Time);
+	noise		Simplex $const4 Point Time 	%line{21} %argrw{"wrrr"}
+# noise.osl:24
+# 	USimplex = noise("usimplex", Point, Time);
+	noise		USimplex $const5 Point Time 	%line{24} %argrw{"wrrr"}
 	end
